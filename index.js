@@ -101,8 +101,10 @@ Use lowPopulationAnimals to do the following:
 3. Return this new array
 */
 
-function lowPopulationAnimals(/*Your Code Here*/) {
-     /*Your Code Here*/
+function lowPopulationAnimals(animalsArray) {
+     const tmpArray = animalsArray.filter(item =>
+          item.population < 5)
+     return tmpArray;
 }
 
 
