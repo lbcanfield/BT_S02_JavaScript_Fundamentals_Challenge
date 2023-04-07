@@ -65,15 +65,16 @@ The zoos want to display both the scientific name and the animal name in front o
 💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
 */
 
-function animalNames(animalsObj) {
+function animalNames(animalsArray) {
      let displayNames = [];
-     animalsObj.forEach(element => {
+     animalsArray.forEach(element => {
           displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
      })
      return displayNames;
 }
 
-console.log(animalNames(zooAnimals));
+// console.log(animalNames(zooAnimals));
+
 /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
 The zoo needs a list of all their animal's names converted to lower case. 
 Use lowerCaseNames to do the following:
@@ -84,10 +85,13 @@ Use lowerCaseNames to do the following:
 💡 NOTE: Do some research for other methods that can help help you
 */
 
-function lowerCaseNames(/*Your Code Here*/) {
-     /*Your Code Here*/
+function lowerCaseNames(animalsArray) {
+     const names = animalsArray.map(item =>
+          item.animal_name.toLowerCase())
+     return names;
 }
 
+// console.log(lowerCaseNames(zooAnimals));
 
 /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
 The zoo is concerned about animals with a lower population count. 
