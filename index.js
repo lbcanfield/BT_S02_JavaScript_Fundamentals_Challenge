@@ -65,11 +65,15 @@ The zoos want to display both the scientific name and the animal name in front o
 💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
 */
 
-function animalNames(/*Your Code Here*/) {
-     /*Your Code Here*/
+function animalNames(animalsObj) {
+     let displayNames = [];
+     animalsObj.forEach(element => {
+          displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
+     })
+     return displayNames;
 }
 
-
+console.log(animalNames(zooAnimals));
 /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
 The zoo needs a list of all their animal's names converted to lower case. 
 Use lowerCaseNames to do the following:
