@@ -148,8 +148,8 @@ function consume(a, b, cb) {
 2. Return the sum of those numbers
 */
 
-function add(/*Your Code Here */) {
-     /*Your Code Here*/
+function add(x, y) {
+     return x + y;
 }
 
 
