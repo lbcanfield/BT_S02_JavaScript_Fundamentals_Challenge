@@ -158,8 +158,8 @@ function add(/*Your Code Here */) {
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */) {
-     /*Your Code Here */
+function multiply(x, y) {
+     return x * y;
 }
 
 
@@ -170,7 +170,7 @@ function multiply(/*Your Code Here */) {
 */
 
 function greeting(fName, lName) {
-     return `Hello ${fName} ${lName}, nice to meet you!`
+     return `Hello ${fName} ${lName}, nice to meet you!`;
 }
 
 
