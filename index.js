@@ -136,7 +136,7 @@ Use the higher-order function called consume to do the following:
   💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
 */
 
-function consume(/*Your Code Here */) {
+function consume(a, b, cb) {
      /*Your Code Here */
 }
 
@@ -169,8 +169,8 @@ function multiply(/*Your Code Here */) {
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
-function greeting(/*Your Code Here */) {
-     return /*Your Code Here */
+function greeting(fName, lName) {
+     return `Hello ${fName} ${lName}, nice to meet you!`
 }
 
 
