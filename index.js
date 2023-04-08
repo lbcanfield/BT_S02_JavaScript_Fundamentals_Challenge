@@ -137,7 +137,7 @@ Use the higher-order function called consume to do the following:
 */
 
 function consume(a, b, cb) {
-     /*Your Code Here */
+     return cb(a, b);
 }
 
 
